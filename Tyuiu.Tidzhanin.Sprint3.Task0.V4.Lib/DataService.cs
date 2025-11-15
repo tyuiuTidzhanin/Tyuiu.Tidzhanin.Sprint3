@@ -8,14 +8,15 @@ namespace Tyuiu.Tidzhanin.Sprint3.Task0.V4.Lib
         public double GetMultiplySeries(int startValue, int stopValue)
         {
             double multiply = 1.0;
+            double sinValue = Math.Sin(0.1); 
 
             for (int k = startValue; k <= stopValue; k++)
             {
-                double term = Math.Sin(0.1 * k);
+                double term = sinValue + k;
                 multiply *= term;
             }
 
-            return Math.Round(multiply, 3);
+            return multiply;
         }
     }
 }

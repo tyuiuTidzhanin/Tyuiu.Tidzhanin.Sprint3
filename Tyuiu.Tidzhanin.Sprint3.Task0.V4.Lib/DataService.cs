@@ -16,7 +16,7 @@ namespace Tyuiu.Tidzhanin.Sprint3.Task0.V4.Lib
                 multiply *= term;
             }
 
-            return multiply;
+            return Math.Round(multiply, 3);
         }
     }
 }
